@@ -3,7 +3,6 @@ adult_meal = float(9.00)
 shake_drink = float(1.75)
 Pie_dessert = float(1.00)
 
-
 child = (int(input ( "How adults are eating today? " ))) 
 adult = (int(input( "How many children are eating today? ")))
 shake = (int(input(  "How many icecream shakes do you want to drink? ")))
@@ -29,3 +28,8 @@ total_sale_print = (str(" Total Sale "))
 print(f"{total_sale_print} ${total_sale_formatted}")
 # print(f"${total_sale}")
 
+Amount_paid = float(input(" How much will you be paying? $"))
+Amount_paid_float = float(Amount_paid)
+Change = (float(total_sale_formatted) - (Amount_paid_float))
+Change_formatted = "{:.2f}".format(Change)
+print(f" ${Change_formatted}")
